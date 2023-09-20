@@ -124,10 +124,17 @@ p{
 /* showcase */
 
 #showcase{
-    background-image: url('../img/showcase.jpg'); no-repeat 
-    center center/cover;
+    background-image: url('../img/costa-brava.jpg');
+    background-size:cover;
     height: 1050px;
-    
+}
+
+#showcase::after {
+    content: '';
+    display: table;
+    clear: both;
+    /* make cover image darker */
+    background-color: rgba(0,0,0,0.5);
 }
 
 #showcase .showcase-content{
